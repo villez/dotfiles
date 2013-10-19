@@ -1,0 +1,47 @@
+[user]
+	name = Ville Siltanen
+	email = ville.siltanen@iki.fi
+[apply]
+	whitespace = nowarn
+[alias]
+	aa = add .
+	alias = !"git config -l | grep alias | cut -c 7-"
+	am = commit --amend -c HEAD
+	amc = commit --amend -C HEAD
+	ap = add -p
+	au = add -u
+	br = branch
+	brd = branch
+	co = checkout
+	cob = checkout -b
+	ci = commit
+	cico = commit -c ORIG_HEAD
+	gh = push github master
+	he = push heroku master
+	l = log
+	last = log -1 HEAD
+	ll = log --numstat
+	ls1 = "log --date=short --pretty='format:%C(blue)%h %C(red)%d %C(yellow)%ad   %C(green)%an%n    %Creset%s%n'"
+	ls2 = "log --date=short --pretty='format:%C(blue)%h %C(red)%d %C(yellow)%ad   %C(green)%an%n%Creset%s'" --decorate --numstat
+	ls3 = "log --date=short --pretty='format:%C(blue)%h %C(red)%d %C(yellow)%ad %Creset%s'"
+	pg = push github
+	pgm = push github master
+	ph = push heroku
+	phm = push heroku master
+	pom = push -u origin master
+ 	rh = reset "HEAD~1"
+	rhh = reset --hard "HEAD~1"
+	rsh = reset --soft "HEAD~1"
+	ru = remote update
+	rv = remote -v
+	st = status
+	unstage = reset HEAD --
+[color]
+	ui = true
+[push]
+	default = current
+[core]
+	editor = ~/bin/emacsclient
+
+[include]
+	path = .gitconfig-private
