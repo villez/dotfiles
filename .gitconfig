@@ -11,11 +11,9 @@
 	ap = add -p
 	au = add -u
 	br = branch
-	brd = branch
 	co = checkout
 	cob = checkout -b
 	ci = commit
-	cico = commit -c ORIG_HEAD
 	gh = push github master
 	he = push heroku master
 	l = log
