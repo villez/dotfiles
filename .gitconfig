@@ -1,8 +1,23 @@
 [user]
 	name = Ville Siltanen
 	email = ville.siltanen@iki.fi
+
+[include]
+	path = .gitconfig-private
+
+[core]
+	excludesfile = ~/.gitignore-global
+	editor = ~/bin/ec
+
+[color]
+	ui = true
+
+[push]
+	default = current
+
 [apply]
 	whitespace = nowarn
+
 [alias]
 	aa = add .
 	alias = !"git config -l | grep alias | cut -c 7-"
@@ -34,12 +49,3 @@
 	rv = remote -v
 	st = status
 	unstage = reset HEAD --
-[color]
-	ui = true
-[push]
-	default = current
-[core]
-	editor = ~/bin/emacsclient
-
-[include]
-	path = .gitconfig-private
