@@ -1,0 +1,17 @@
+\set PROMPT1 '%[%033[34;1m%]%n@%m %[%033[32;1m%]%/%R%[%033[0m%]%# '
+\set PROMPT2 '[cont] %R > '
+
+-- make nulls visible
+\pset null '[NULL]'
+
+-- automatically switch to expanded table format for lots of data
+\x auto
+
+\set VERBOSITY verbose
+
+-- separate history file per database.
+\set HISTFILE ~/.psql_history- :DBNAME
+
+-- ignore duplicates in history
+\set HISTCONTROL ignoredups
+
